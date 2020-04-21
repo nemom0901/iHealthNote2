@@ -25,7 +25,7 @@
                                 <rect key="frame" x="20" y="113" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ny9-Sa-CyR">
                                 <rect key="frame" x="20" y="190" width="374" height="63"/>
@@ -40,9 +40,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="AccountTextField" destination="Csj-lT-pIT" id="O1g-RE-vVS"/>
                         <outlet property="PasswordTextField" destination="zO9-fE-h0c" id="Zmk-q9-1Ao"/>
-                        <outletCollection property="AccountTextField" destination="Csj-lT-pIT" collectionClass="NSMutableArray" id="Erw-dT-yWe"/>
-                        <segue destination="z3i-bG-5Pz" kind="show" id="KVK-E4-lhs"/>
+                        <segue destination="z3i-bG-5Pz" kind="show" identifier="moveToMainViewSegue" id="KVK-E4-lhs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

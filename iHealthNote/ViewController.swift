@@ -56,6 +56,7 @@ class ViewController: UIViewController {
         
         print("account:\( account );password:\( password )")
         
+        self.performSegue(withIdentifier: "moveToMainViewSegue", sender: self)
     }
 }
 
