@@ -46,6 +46,21 @@ class ViewController: UIViewController {
     }
         
         
+    @IBOutlet weak var AccountTextField: UITextField!
+    
+    @IBOutlet weak var PasswordTextField: UITextField!
+    
+    @IBAction func LoginButtonClicked(_ sender: Any) {
+        let account = AccountTextField.text
+        let password = PasswordTextField.text
+        
+        print("account:\( account );password:\( password )")
+        
     }
+}
+
+
+
+    
 
 
